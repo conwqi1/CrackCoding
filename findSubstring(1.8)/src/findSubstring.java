@@ -6,7 +6,7 @@ public class findSubstring {
 	public static boolean isRotation(String s1,String s2){
 		if (s2.length()==s1.length() && s1.length()>0){
 			String s1s1=s1+s1;
-			System.out.println(s1s1);
+			//System.out.println(s1s1);
 			return isSubstring(s1s1, s2);
 			
 	          }	

@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+public class ArrayListDemo {
+ArrayList<String> aList=new ArrayList<String>(20);
+aList.add(1,"jack");
+aList.add(2."Andy");
+aList.set(2."Andy Song")
+String name=aList.get(index);
+
+}

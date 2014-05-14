@@ -1,0 +1,27 @@
+
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+
+
+
+public class removeDup{
+	
+	public static void deleteDup(LinkedListNode head){
+		if (head==null) return;
+		LinkedListNode current=head;
+		while(current!=null){
+			LinkedListNode runner=current;
+			
+		}
+	}
+	}
+
+
+public static void main(String[] args){
+	LinkedList<String> list = new LinkedList<String>();
+	//Queue<String> queue = new LinkedList<String>();
+	
+}
+}

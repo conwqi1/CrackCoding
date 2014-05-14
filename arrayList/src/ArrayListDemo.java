@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+//constructed an arraylist, and use its functions. 
+public class ArrayListDemo {
+	public static void printArray(ArrayList AL) {
+		for (int i = 0; i < AL.size(); i++) {
+			System.out.println(AL.get(i));
+		}
+	}
+
+	public static void main(String[] args) {
+		ArrayList<String> ToDoList = new ArrayList<String>(10);
+		ToDoList.add(0, "BeatJack");
+		printArray(ToDoList);
+		if (ToDoList.isEmpty()) {
+			ToDoList.add(1, "BeatJack");
+			ToDoList.add(2, "TeasingJack");
+			printArray(ToDoList);
+		} else {
+			ToDoList.clear();
+			for (int i = 0; i < 20; i++) {
+				ToDoList.add(i, "JackWang");
+			}
+			printArray(ToDoList);
+		}
+
+	}
+}
+
