@@ -1,0 +1,16 @@
+package rev;
+public class ListNode{
+	public String data;
+	public ListNode next;
+	public ListNode(){
+		data=null;
+		next=null;
+	}
+	public ListNode(String newString, ListNode newNode){
+		data=newString;
+		next=newNode;
+		}
+	
+
+	
+}

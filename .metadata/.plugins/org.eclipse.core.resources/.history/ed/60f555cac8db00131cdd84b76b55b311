@@ -1,0 +1,49 @@
+public class KthToLast {
+	public ListNode head;
+	public ListNode tail;
+
+	public int nthToLast(ListNode head, int k) {
+		ListNode p1 = new ListNode();
+		ListNode p2 = new ListNode();
+		p1 = head;
+		p2 = head;
+		if (p1 == null) {
+			return 0;
+		} else {
+			for (int i = 0; i < k - 1; i++) {
+				p1 = p1.next;
+			}
+		}
+		if (p2 == null) {
+			return 0;
+		} else {
+			while (p1 != null) {
+				p2 = p2.next;
+				p1 = p1.next;
+			}
+			return p2.data;
+		}
+	}
+
+	public void addInt(int j) {
+		ListNode HD = new ListNode(j, head);
+		if (head == null) {
+			tail = HD;
+		} else {
+			head = HD;
+		}
+	}
+
+	public static void main(String[] args) {
+       KthToLast jack =new KthToLast();
+       jack.addInt(1);
+       jack.addInt(2);
+       jack.addInt(3);
+       jack.addInt(4);
+       jack.addInt(5);
+       jack.addInt(6);
+       System.out.println( nthToLast(jack, 2));
+   
+	}
+
+}

@@ -1,0 +1,15 @@
+package rev;
+
+public class removeDemo {
+	public static void main(String[] args){
+		removeDup followUp=new removeDup();
+		followUp.addData("J");
+		followUp.addData("k");
+         followUp.addDataBack("J");
+         followUp.addDataBack("x");
+         followUp.addDataBack("l");
+          followUp.printList(); 
+		
+	}
+
+}
